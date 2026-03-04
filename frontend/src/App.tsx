@@ -1,13 +1,23 @@
-import './App.css'
+import "./App.css";
 
-function App() {
+function BandList() {
+  const bandNames = ["Dire Straits", "R.E.M.", "Collective Soul"];
 
-  const someVariable = 'Hello, World!';
   return (
     <>
-      <h1>It is tradition to say, "{someVariable}"</h1>
+      <h2>{bandNames[0]}</h2>
+      <h2>{bandNames[1]}</h2>
+      <h2>{bandNames[2]}</h2>
     </>
-  )
+  );
 }
 
-export default App
+function App() {
+  return (
+    <>
+      <BandList />
+    </>
+  );
+}
+
+export default App;
